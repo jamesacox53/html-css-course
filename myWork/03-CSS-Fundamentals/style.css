@@ -36,6 +36,20 @@ li {
   font-size: 15px;
 }
 
-footer p {
+.author {
+  font-style: italic;
   font-size: 14px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.related-author {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
 }
