@@ -20,6 +20,7 @@ body {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 10px 0;
+  width: 500px;
 }
 
 h1,
@@ -120,6 +121,8 @@ a:active {
 
 .article-image {
   margin-bottom: 5px;
+  width: 500px;
+  height: auto;
 }
 
 strong {
@@ -132,4 +135,8 @@ strong {
 
 .product-article {
   margin-bottom: 20px;
+}
+
+.learn-more-at {
+  padding: 0;
 }
