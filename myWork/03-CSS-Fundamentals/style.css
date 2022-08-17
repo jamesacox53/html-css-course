@@ -142,6 +142,8 @@ strong {
 
 .article-header {
   font-size: 40px;
+
+  position: relative;
 }
 
 .product-article {
@@ -162,4 +164,22 @@ strong {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.title-text::first-letter {
+  font-style: normal;
+}
+
+.article-header::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+
+  display: inline-block;
+  position: absolute;
+  padding: 3px 7px;
+  top: -5px;
+  right: -5px;
 }
