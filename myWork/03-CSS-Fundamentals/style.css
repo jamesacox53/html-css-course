@@ -146,8 +146,20 @@ strong {
 
 .product-article {
   margin-bottom: 20px;
+
+  position: relative;
 }
 
 .learn-more-at {
   padding: 0;
+}
+
+.like-button {
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
