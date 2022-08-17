@@ -1,6 +1,15 @@
 * {
   margin: 0;
-  padding: 0 3px;
+  padding: 0;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.article-content {
+  margin: 0 15px;
 }
 
 body {
@@ -19,8 +28,9 @@ body {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 10px 0;
-  width: 500px;
+  padding: 10px 0 0 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1,
@@ -88,6 +98,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin: 0 25px 5px 25px;
 }
 
 a:link {
