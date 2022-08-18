@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 825px;
+  margin: 5px auto;
+
+  position: relative;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product {
+  border: 4px solid black;
+}
+
+.product-name {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.shipping {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1098ad;
+  margin-bottom: 10px;
+}
+
+.more-info-link:link,
+.more-info-link:visited {
+  color: black;
+}
+
+.more-info-link:hover,
+.more-info-link:active {
+  color: black;
+  text-decoration: none;
+}
+
+.product-details-heading {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-details-list {
+  list-style-type: square;
+  margin: 10px 20px;
+}
+
+.product-details-list li {
+  margin-bottom: 5px;
+}
+
+.product-details-list li:last-child {
+  margin-bottom: 0;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: none;
+  border-top: 4px solid black;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.add-to-cart-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.short-description-text {
+  margin-bottom: 5px;
+}
+
+.sale-banner {
+  background-color: red;
+  color: white;
+  padding: 3px 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  left: -15px;
+  top: 15px;
+
+  display: inline-block;
+  position: absolute;
+}
+
+.colors-boxes {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+
+.colors-boxes .color-box {
+  margin-right: 15px;
+}
+
+.colors-boxes .color-box:last-child {
+  margin-right: 0px;
+}
+
+.color-box {
+  padding: 15px;
+
+  display: inline-block;
+}
+
+.black-box {
+  background-color: black;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.yellow-box {
+  background-color: yellow;
+}
+
+.light-green-box {
+  background-color: lightgreen;
+}
+
+.dark-green-box {
+  background-color: darkgreen;
+}
