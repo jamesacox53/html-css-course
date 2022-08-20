@@ -4,12 +4,8 @@
 }
 
 .container {
-  width: 700px;
+  width: 1200px;
   margin: 0 auto;
-}
-
-.article-content {
-  margin: 0 15px;
 }
 
 body {
@@ -132,8 +128,7 @@ a:active {
 
 .article-image {
   margin-bottom: 5px;
-  width: 500px;
-  height: auto;
+  width: 100%;
 }
 
 strong {
@@ -162,7 +157,7 @@ strong {
   cursor: pointer;
 
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   right: 0;
 }
 
@@ -180,25 +175,21 @@ strong {
   display: inline-block;
   position: absolute;
   padding: 3px 7px;
-  top: -5px;
-  right: -5px;
+  top: 5px;
+  right: 0;
 }
 
 /* Floats */
 
 .author-image {
   float: left;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .author {
   float: left;
   margin-top: 20px;
   margin-bottom: 15px;
-}
-
-.article-image {
-  float: left;
 }
 
 .title-text {
@@ -213,4 +204,38 @@ strong {
   clear: both;
   content: "";
   display: block;
+}
+
+.product-article {
+  width: 825px;
+  float: left;
+}
+
+.related-aside {
+  width: 300px;
+  float: right;
+}
+
+.article-footer {
+  clear: both;
+}
+
+.navigation-bar {
+  margin-top: 15px;
+}
+
+.navigation-bar a {
+  margin-right: 20px;
+}
+
+.related-article-title {
+  display: inline-block;
+}
+
+.related li {
+  margin-bottom: 10px;
+}
+
+.related-posts-title {
+  margin-bottom: 10px;
 }
