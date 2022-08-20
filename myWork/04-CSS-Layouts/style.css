@@ -208,3 +208,9 @@ strong {
 .navigation-bar {
   float: right;
 }
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
