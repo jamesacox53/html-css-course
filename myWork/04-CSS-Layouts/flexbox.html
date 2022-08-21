@@ -37,7 +37,7 @@
         font-family: sans-serif;
         background-color: #ddd;
         font-size: 25px;
-        margin: 40px;
+        margin: 20px;
 
         /* FLEXBOX */
         display: flex;
@@ -49,6 +49,22 @@
         */
         align-items: center;
         justify-content: flex-start;
+
+        gap: 5px;
+      }
+
+      .el {
+        /*
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        */
+
+        /* flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        */
+        flex: 1 0 auto;
       }
 
       .el--1 {
