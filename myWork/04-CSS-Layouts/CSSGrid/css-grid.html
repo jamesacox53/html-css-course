@@ -47,6 +47,8 @@
 
         column-gap: 20px;
         row-gap: 10px;
+
+        display: none;
       }
 
       .container--2 {
@@ -56,11 +58,25 @@
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
+        width: 800px;
         height: 600px;
 
         /* CSS GRID */
-        display: none;
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: center;
+
+        justify-items: center;
+        align-items: center;
+      }
+
+      .el--3 {
+        justify-self: start;
+        align-self: end;
       }
 
       .el--8 {
