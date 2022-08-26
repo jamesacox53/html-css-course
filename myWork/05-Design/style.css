@@ -215,3 +215,17 @@ footer {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
+/* title container */
+
+.header-text-box {
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.header-bottom-text {
+  align-self: flex-end;
+  justify-self: flex-start;
+}
