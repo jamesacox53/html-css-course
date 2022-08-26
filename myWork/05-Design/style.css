@@ -91,7 +91,7 @@ header {
 }
 
 h1 {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
   /* 44 / 52 / 62 */
   font-size: 44px;
   line-height: 1.1;
@@ -219,13 +219,5 @@ footer {
 /* title container */
 
 .header-text-box {
-  height: 100%;
-
-  display: grid;
-  grid-template-rows: auto auto;
-}
-
-.header-bottom-text {
   align-self: flex-end;
-  justify-self: flex-start;
 }
