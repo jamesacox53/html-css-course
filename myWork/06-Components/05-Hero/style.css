@@ -32,10 +32,19 @@ body {
 }
 
 .header {
+  color: white;
   height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../hero.jpg);
+  background-size: cover;
 }
 
 .nav-bar {
+  padding-top: 32px;
   font-size: 20px;
   font-weight: 700;
 
@@ -43,9 +52,22 @@ body {
   justify-content: space-between;
 }
 
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-container-inner {
+  width: 50%;
+}
+
 .main-heading {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 
 .content-paragraph {
