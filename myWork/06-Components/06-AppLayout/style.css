@@ -1,0 +1,77 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  Main Color: #087f5b
+  Grey Color: #343a40
+*/
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: sans-serif;
+  color: #343a40;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.application-container {
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+}
+
+.nav,
+.menu,
+.inbox-section,
+.email-view,
+.additional-info {
+  padding-top: 24px;
+}
+
+.nav {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  background-color: #343a40;
+  color: white;
+}
+
+.menu {
+  grid-row: 1;
+  grid-column: 2 / -1;
+  background-color: #7048e8;
+  color: white;
+}
+
+.inbox-section {
+  grid-row: 2;
+  grid-column: 2;
+  background-color: #e9ecef;
+}
+
+.email-view {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.additional-info {
+  grid-row: 2;
+  grid-column: 4;
+  background-color: #e9ecef;
+}
