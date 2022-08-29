@@ -24,4 +24,35 @@ body {
   font-family: "Inter", sans-serif;
   color: #343a40;
   line-height: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.table-component {
+  width: 800px;
+  margin-top: 100px;
+  border-collapse: collapse;
+
+  font-size: 18px;
+}
+
+th,
+td {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #087f5b;
+  color: white;
+  width: 25%;
+}
+
+.table-component tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.table-component tbody tr:nth-child(even) {
+  background-color: #e9ecef;
 }
