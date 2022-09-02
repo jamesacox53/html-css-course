@@ -42,3 +42,15 @@ html {
   font-weight: 400;
   color: #555555;
 }
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-image {
+  width: 100%;
+}
