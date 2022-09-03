@@ -52,6 +52,25 @@ html {
   General Reusable Components 
 ******************************/
 
+.container {
+  max-width: 108rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -221,4 +240,12 @@ html {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/***************************** 
+     How It Works Section
+******************************/
+
+.section-how {
+  padding: 9.6rem 0;
 }
