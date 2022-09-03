@@ -5,10 +5,14 @@ Font Sizing System (px):
 
 Font Weight System:
 Default: 400
-
+Medium: 500
+Semi-Bold: 600
+Bold: 700
 
 Line Height System:
 Default: 1
+Small: 1.05
+Paragraph Default: 1.6
 
 --- 02 Colors
 Primary: #e67e22
@@ -20,6 +24,7 @@ Greys: #555555, #333333
 --- 05 Shadows
 
 --- 06 Border Radius
+Default: 9px
 
 --- 07 Whitespace
 Spacing System (px):
@@ -111,6 +116,47 @@ html {
 
 .logo {
   height: 2.2rem;
+}
+
+/*****************************
+          Navigation
+*****************************/
+
+.main-nav-list {
+  list-style: none;
+
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.2s;
+
+  display: inline-block;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: white;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
 }
 
 /*****************************
