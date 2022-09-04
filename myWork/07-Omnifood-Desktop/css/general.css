@@ -30,6 +30,7 @@ Greys: #555555, #333333
 
 --- 06 Border Radius
 Default: 9px
+Medium: 11px
 
 --- 07 Whitespace
 Spacing System (px):
@@ -155,4 +156,8 @@ html {
 
 .margin-right-small {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }

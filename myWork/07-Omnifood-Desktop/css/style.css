@@ -172,18 +172,47 @@
   position: relative;
 }
 
+/* 2 Circles as Background instead of 1 */
+/* .step-img-box::before,
+.step-img-box::after {
+  content: "";
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+}
+
+.step-img-box::before {
+  background-color: #eea564;
+  width: 60%;
+  padding-bottom: 60%;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  background-color: #e67e22;
+  width: 48%;
+  padding-bottom: 48%;
+  z-index: -1;
+} */
+
+/* 1 Circle as background */
 .step-img-box::before {
   content: "";
   border-radius: 50%;
   background-color: #e67e22;
   width: 60%;
   padding-bottom: 60%;
-  z-index: -1;
 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: -1;
 
   display: block;
 }
@@ -203,6 +232,48 @@
 
 .section-meals {
   padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meal-content {
+  padding: 2.4rem 3.2rem 4.8rem 3.2rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 100px;
+  font-weight: 600;
+
+  display: inline-block;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+  color: #333333;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+  color: #333333;
+}
+
+.tag--paleo {
+  background-color: #ffd43b;
+  color: #333333;
 }
 
 .meal-img {
@@ -226,4 +297,14 @@
 
 .meal-attribute {
   font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
 }
