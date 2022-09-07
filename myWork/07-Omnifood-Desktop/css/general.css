@@ -21,12 +21,13 @@ Letter Spacing System:
 
 --- 02 Colors
 Primary: #e67e22
-Tints: #fdf2e9
+Tints: #fdf2e9, #eb984e
 Shades: #cf711f
 Accents:
 Greys: #555555, #333333, #6f6f6f
 
 --- 05 Shadows
+ 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 
 --- 06 Border Radius
 Default: 9px
