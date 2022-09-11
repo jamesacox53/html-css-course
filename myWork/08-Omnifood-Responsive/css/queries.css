@@ -219,3 +219,103 @@
     grid-column: span 3;
   }
 }
+
+/*****************************
+         Below 544px
+*****************************/
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 3.2rem;
+    gap: 6.4rem;
+  }
+
+  .hero-image {
+    width: 80%;
+  }
+
+  .featured-in-logo {
+    height: 1.2rem;
+  }
+
+  .step1-img-box {
+    grid-row: 1;
+  }
+
+  .step3-img-box {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .meal-list {
+    justify-items: center;
+  }
+
+  .meal {
+    width: 70%;
+  }
+
+  .testimonials-container {
+    padding: 9.8rem 3.2rem 4.8rem 3.2rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .pricing-2--cols {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .starter-plan-bottom {
+    grid-row: 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    grid-row: 1;
+    height: 32rem;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-text {
+    margin-bottom: 4rem;
+  }
+}
