@@ -1,7 +1,19 @@
-const currentYear = new Date().getFullYear();
+function setCurrentYear() {
+  const currentYear = new Date().getFullYear();
 
-const yearEl = document.querySelector('.year');
-yearEl.textContent = currentYear;
+  const yearEl = document.querySelector('.year');
+  yearEl.textContent = currentYear;
+}
+
+function makeMobileNavigationWork() {
+  const btnMobileNavEl = document.querySelector('.btn-mobile-nav');
+  const headerEl = document.querySelector('.header');
+
+  btnMobileNavEl.addEventListener('click', function () {
+    headerEl.classList.toggle('nav-open');
+  });
+}
+
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -22,7 +34,8 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
-
+setCurrentYear();
+makeMobileNavigationWork();
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*
