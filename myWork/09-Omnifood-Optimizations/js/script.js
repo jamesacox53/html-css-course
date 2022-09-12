@@ -61,6 +61,30 @@ function _closeMobileNavigation(link) {
   headerEl.classList.toggle('nav-open');
 }
 
+function makeNavigationSticky() {
+  const sectionHeroEl = document.querySelector(".section-hero");
+
+  const options = {
+    // null is in the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px'
+  };
+
+  const intersectionObserver = new IntersectionObserver(_makeNavSticky, options);
+  intersectionObserver.observe(sectionHeroEl);
+}
+
+function _makeNavSticky(entries) {
+  const entry = entries[0];
+
+  if (entry.isIntersecting) {
+    document.body.classList.remove('sticky');
+
+  } else {
+    document.body.classList.add('sticky');
+  }
+}
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -84,6 +108,7 @@ checkFlexGap();
 setCurrentYear();
 makeMobileNavigationWork();
 makeSmoothScrollingWork();
+makeNavigationSticky();
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*
