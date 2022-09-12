@@ -14,6 +14,53 @@ function makeMobileNavigationWork() {
   });
 }
 
+function makeSmoothScrollingWork() {
+  const allLinks = document.querySelectorAll('a:link');
+
+  allLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const href = link.getAttribute('href');
+
+      if (href === "#") {
+        _scrollToTop();
+
+      } else if (href.startsWith("#")) {
+        _scrollToSection(href);
+
+      } else {
+        return;
+      }
+
+      _closeMobileNavigation(link);
+    });
+  });
+}
+
+function _scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function _scrollToSection(sectionId) {
+  const sectionEl = document.querySelector(sectionId);
+
+  sectionEl.scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+function _closeMobileNavigation(link) {
+  if (!link.classList.contains("main-nav-link"))
+    return;
+
+  const headerEl = document.querySelector('.header');
+  headerEl.classList.toggle('nav-open');
+}
+
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
@@ -36,6 +83,7 @@ function checkFlexGap() {
 checkFlexGap();
 setCurrentYear();
 makeMobileNavigationWork();
+makeSmoothScrollingWork();
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*
