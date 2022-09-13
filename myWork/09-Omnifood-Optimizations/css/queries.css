@@ -92,19 +92,28 @@
   }
 
   .step-number {
-    font-size: 7.4rem;
+    font-size: 5.2rem;
   }
 
   .meal-content {
     padding: 1.6rem 2.4rem 3.2rem 2.4rem;
   }
 
-  .section-testimonials {
+  .testimonials {
+    row-gap: 4.6rem;
+    padding-bottom: 4.6rem;
+  }
+
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
 
   .gallery {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .gallery-lower-image {
+    display: block;
   }
 
   .cta {
@@ -172,10 +181,10 @@
 }
 
 /*****************************
-         Below 704px
+         Below 752px
 *****************************/
 
-@media (max-width: 44em) {
+@media (max-width: 47em) {
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
