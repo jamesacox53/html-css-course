@@ -428,6 +428,7 @@
   grid-template-columns: repeat(3, 1fr);
   align-content: flex-start;
   gap: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .gallery-item {

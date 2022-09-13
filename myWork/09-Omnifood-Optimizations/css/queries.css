@@ -22,6 +22,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .gallery-lower-image {
+    display: none;
+  }
+
   .header {
     padding: 0 3.2rem;
   }
@@ -44,7 +48,12 @@
   }
 
   .testimonials-container {
-    padding: 9.8rem 3.2rem;
+    padding: 0 3.2rem;
+  }
+
+  .testimonials {
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
   }
 }
 
