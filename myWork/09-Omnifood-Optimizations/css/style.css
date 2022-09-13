@@ -105,7 +105,7 @@
 
 .hero {
   /* 108rem */
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 
@@ -126,7 +126,7 @@
 }
 
 .delivered-meals {
-  margin-top: 8rem;
+  margin-top: 6rem;
 
   display: flex;
   align-items: center;
@@ -164,7 +164,13 @@
 ******************************/
 
 .section-featured-in {
-  padding: 4.8rem 0 3.2rem 0;
+  padding: 4.8rem 0 2.4rem 0;
+}
+
+.featured-in-container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
 }
 
 .heading-featured-in {
@@ -193,11 +199,11 @@
 ******************************/
 
 .section-how {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 4.8rem 0;
 }
 
 .step-number {
-  font-size: 8.6rem;
+  font-size: 6.2rem;
   font-weight: 600;
   color: #dddddd;
   margin-bottom: 1.2rem;
@@ -376,21 +382,27 @@
 
 .section-testimonials {
   background-color: #fdf2e9;
+  padding: 9.6rem 0 9.6rem 0;
+}
+
+.testimonials-grid {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 0 0 3.2rem;
 
   display: grid;
   grid-template-columns: 55fr 45fr;
-  align-items: center;
 }
 
 .testimonials-container {
-  padding: 9.6rem;
+  margin-right: 2.4rem;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
-  column-gap: 8rem;
+  column-gap: 2.4rem;
 }
 
 .testimonial-img {
@@ -416,7 +428,6 @@
   grid-template-columns: repeat(3, 1fr);
   align-content: flex-start;
   gap: 1.6rem;
-  padding: 1.6rem;
 }
 
 .gallery-item {
@@ -438,7 +449,7 @@
 ******************************/
 
 .section-pricing {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 4.8rem 0;
 }
 
 .pricing-2--cols {
@@ -592,7 +603,7 @@
 ******************************/
 
 .section-cta {
-  padding: 4.8rem 0 12.8rem 0;
+  padding: 9.6rem 0 4.8rem 0;
 }
 
 .cta {
@@ -673,7 +684,7 @@
 ******************************/
 
 .footer {
-  padding: 12.8rem 0;
+  padding: 9.6rem 0 9.6rem 0;
   border-top: 1px solid #eeeeee;
 }
 

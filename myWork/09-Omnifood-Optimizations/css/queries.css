@@ -1,11 +1,17 @@
 /*****************************
-         Below 1344px
+         Below 1200px
 *****************************/
 
-@media (max-width: 84em) {
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+
   .hero {
     /* 108rem */
     max-width: 120rem;
+    gap: 4.8rem;
   }
 
   .heading-primary {
@@ -14,17 +20,6 @@
 
   .gallery {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/*****************************
-         Below 1200px
-*****************************/
-
-@media (max-width: 75em) {
-  html {
-    /* 9px / 16px */
-    font-size: 56.25%;
   }
 
   .header {
@@ -46,10 +41,6 @@
 
   .heading-tertiary {
     font-size: 2.4rem;
-  }
-
-  .hero {
-    gap: 4.8rem;
   }
 
   .testimonials-container {
